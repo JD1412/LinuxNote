@@ -1,0 +1,15 @@
+#!/bin/bash
+
+result=`ps -e | grep electron-ssr`
+# echo ${result[0]}
+
+for i in ${result}
+do
+	# echo $i
+	number=$i
+	break
+done
+
+echo $number
+
+kill $number

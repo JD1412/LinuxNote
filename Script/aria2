@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "******************************************************************"
+echo "*  Please check if the PROXY SERVER is RUNNING!!!(SSR,v2ray...)  *"
+echo "*  The aria2 will NOT work normally!!!                           *"
+echo "******************************************************************"
+aria2c --conf-path=/etc/aria2/aria2.conf

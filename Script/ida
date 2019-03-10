@@ -1,0 +1,19 @@
+#!/bin/bash
+
+OS_bitnum=$1
+
+if [ $OS_bitnum -eq '32' ]; then
+	echo "*********************"
+	echo "***  enjoy idaq   ***"
+	echo "*********************"
+	wine /root/Documents/IDA/idaq.exe
+
+elif [ $OS_bitnum -eq '64' ];then
+	echo "*********************"
+	echo "*** enjoy idaq64  ***"
+	echo "*********************"
+	wine /root/Documents/IDA/idaq64.exe
+else
+	echo "Please use: ida 32/64"
+fi
+
