@@ -14,7 +14,7 @@
 
 [程序](./Script/cowsay "cowsay")
 
-## gdb.sh
+## GDB
 
 GDB默认的没有插件的状态不太好用，前人为它做了三个插件比较好用但是一次只能用一个，每次切换还要去修改配置文件，于是就写了一个脚本直接自动化的完成修改配置文件的操作
 
@@ -32,7 +32,7 @@ Linux下的IDA要用wine去跑，启动起来感觉有点麻烦就写了这个�
 
 [关闭SSR](./Script/killssr)
 
-## pwnserver.sh
+## Pwnserver
 
 做CTF的时候用来把一个题目挂起来
 [PWN](./Script/pwnserver.sh)
