@@ -1,0 +1,89 @@
+e_spacer right
+use_xft yes
+font Microsoft YaHei:size=8
+xftfont Microsoft YaHei:size=8
+override_utf8_locale yes
+update_interval 1
+own_window yes
+own_window_type desktop
+own_window_transparent yes
+#own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual yes
+own_window_argb_value 120
+double_buffer yes
+minimum_size 206 5
+maximum_width 400
+draw_shades yes
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color ffffff
+default_shade_color 000000
+default_outline_color 000000
+alignment top_right
+gap_x 5
+gap_y 35
+cpu_avg_samples 2
+uppercase no # set to yes if you want all text to be in uppercase
+
+TEXT
+${font Microsoft YaHei:style=Bold:pixelsize=22}${alignc}${time %H:%M:%S}
+${font Microsoft YaHei:pixelsize=16}${alignc}${time %b%d-%a}${alignc}
+${color #ffa200}${hr 2}
+${font Microsoft YaHei:pixelsize=12}
+${color #00ffcf}HOST:${color #00ffcf} $alignr$nodename
+${color #00ffcf}Kernel: ${color #00ffcf}$alignr$kernel
+${color #00ffcf}Running_Time: ${color #00ffcf}$alignr$uptime
+${color #ffd700}${stippled_hr 1}
+${font Microsoft YaHei:pixelsize=12}
+${color #00ff1e}CPU 0: ${cpu cpu0}% $alignr$acpitemp°C(T)
+${color #dcff82}${cpubar 8 cpu0}
+${color #00ff1e}CPU 1: ${cpu cpu0}%
+${color #dcff82}${cpubar 8 cpu0}
+${color #00ff1e}CPU 2: ${cpu cpu2}%
+${color #dcff82}${cpubar 8 cpu2}
+${color #00ff1e}CPU 3: ${cpu cpu3}%
+${color #dcff82}${cpubar 8 cpu3}
+${color #00ff1e}CPU 4: ${cpu cpu4}%
+${color #dcff82}${cpubar 8 cpu4}
+${color #00ff1e}CPU 5: ${cpu cpu5}%
+${color #dcff82}${cpubar 8 cpu5}
+${color #00ff1e}CPU 6: ${cpu cpu6}%
+${color #dcff82}${cpubar 8 cpu6}
+${color #00ff1e}CPU 7: ${cpu cpu7}%
+${color #dcff82}${cpubar 8 cpu7}
+
+${color #00ff1e}CPU:$alignr NUM%
+
+
+${color #ddaa00} ${top name 1}$alignr${top cpu 1}
+${color lightgrey} ${top name 2}$alignr${top cpu 2}
+${color lightgrey} ${top name 3}$alignr${top cpu 3}
+${color #ffd700}${stippled_hr 1}$color
+${font Microsoft YaHei:pixelsize=12}
+${color #00ff1e}SAM: $mem $alignr${color #db7093}$memperc%
+${color #78af78}${membar 8}
+${color #00ff1e}SWAP: $swap $alignr ${color #db7093}$swapperc%
+${color #78af78}${swapbar 8}
+${color #00ff1e}Memory usage: $alignr MEM%
+${color #ddaa00} ${top_mem name 1}$alignr ${top_mem mem 1}
+${color lightgrey} ${top_mem name 2}$alignr ${top_mem mem 2}
+${color lightgrey} ${top_mem name 3}$alignr ${top_mem mem 3}
+${color #ffd700}${stippled_hr 1}$color
+${font Microsoft YaHei:pixelsize=12}
+${color #00ff1e}Hard disk read speed:${alignr}${diskio_read}
+${color #00ff1e}Hard disk write speed:${alignr}${diskio_write}
+${font Microsoft YaHei:pixelsize=12}
+${color #00ff1e}/ Partition: ${color}${alignr}${fs_used /}/ ${fs_size /}
+${color #78af78}${fs_bar 8 /}
+${color #00ff1e}/boot Partition: ${color}${alignr}${fs_used /boot}/ ${fs_size /boot}
+${color #78af78}${fs_bar 8 /boot}
+${color #00ff1e}/home Partition: ${color}${alignr}${fs_used /home}/ ${fs_size /home}
+${color #78af78}${fs_bar 8 /home}
+${color #ffd700}${stippled_hr 1}$color
+${font Microsoft YaHei:pixelsize=12}
+${color #00ff1e}Network $alignr ${color #00ff1e}IP地址: ${color DDAA00}${addr eth0}
+${voffset 1}${color #98c2c7} UP: ${color #db7093}${upspeed eth0}/s ${alignr}${color #98c2c7}ALL: ${color #db7093}${totalup eth0}
+${voffset 1}${color #98c2c7} DOWN: ${color #ddaa00}${downspeed eth0}/s ${alignr}${color #98c2c7}ALL: ${color #ddaa00}${totaldown eth0}
+${font Microsoft YaHei:pixelsize=12}
+${color #ffa200}${hr 2}

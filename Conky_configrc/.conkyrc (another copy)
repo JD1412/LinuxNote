@@ -1,0 +1,83 @@
+background yes
+double_buffer yes
+
+alignment top_right
+
+border_width 1
+cpu_avg_samples 2
+default_color white
+default_outline_color white
+default_shade_color white
+draw_borders no
+draw_graph_borders yes
+draw_outline no
+draw_shades no
+
+gap_x 0
+gap_y 0
+net_avg_samples 2
+no_buffers yes
+out_to_console no
+out_to_stderr no
+extra_newline no
+
+own_window yes
+own_window_type normal
+own_window_transparent no
+own_window_colour 000000
+own_window_argb_visual yes
+own_window_argb_value 102
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_type desktop
+
+minimum_size 300 430
+stippled_borders 0
+update_interval 1.0
+uppercase no
+use_spacer none
+
+show_graph_scale no
+show_graph_range no
+
+use_xft yes
+xftalpha 0.1
+xftfont Droid Sans:size=12
+color0 white
+color1 EAEAEA
+color2 FFA300
+color3 grey
+
+TEXT
+##日期
+${font Microsoft YaHei:pixelsize=30}${alignc}${time %b%d-%a}${alignc}
+##时间
+${font Microsoft YaHei:pixelsize=40}${alignc}${time %H:%M:%S}
+##系统信息
+${font Ubuntu:size=10,weight:bold}${color4}SysINFO ${hr 2}
+${offset 15}${font Ubuntu:size=10,weight:normal}${color1}$sysname $kernel
+${offset 15}${font Ubuntu:size=10,weight:normal}${color1}$nodename
+${offset 15}${font Ubuntu:size=10,weight:normal}${color1}Opening: $uptime
+##cpu使用率前2
+${color2}CPU ${color0}${alignr}${cpu cpu0}%
+${cpubar cpu0 2,}
+${top name 1} $alignr ${top cpu 1}%
+${top name 2} $alignr ${top cpu 2}%
+##内存使用率前2
+${color2}RAM ${color0}${alignr}${mem}
+${membar 5,}
+${top_mem name 1} $alignr ${top_mem mem_res 1}
+${top_mem name 2} $alignr ${top_mem mem_res 2}
+##cpu整体使用率
+${color2}CPU ${color0} ${cpu cpu0}%  ${color3}${cpubar cpu0 10,} 
+##个核心使用率
+${cpugraph cpu0 100,300}${voffset -19}
+${cpugraph cpu1 50,100}${cpugraph cpu2 50,100}${voffset -19}
+${cpugraph cpu3 50,100}${cpugraph cpu4 50,100}
+${font Ubuntu:size=10}${voffset -110}${color3}${goto 10}1 ${goto 110}2 ${goto 210}3 ${goto 0} ${voffset 50} ${goto 10}4 ${goto 110}5 ${goto 210}6
+${font Ubuntu:size=8}${voffset -67}${color3}${goto 58}${freq_g (1)}GHz ${goto 158}${freq_g (2)}GHz ${goto 258}${freq_g (3)}GHz ${goto 0}${voffset 50}${goto 58}${freq_g (4)}GHz ${goto 158}${freq_g (5)}GHz ${goto 258}${freq_g (6)}GHz
+
+##网络信息----重要 enp2s0 这个位置可以自己查看自己的网络接口后修改，否则显示流量为0
+
+${voffset 1}${color #98c2c7} UP: ${color #db7093}${upspeed wlp9s0b1}/s ${alignr}${color #98c2c7}ALL: ${color #db7093}${totalup wlp9s0b1}
+${voffset 1}${color #98c2c7} DOWN: ${color #ddaa00}${downspeed wlp9s0b1}/s ${alignr}${color #98c2c7}ALL: ${color #ddaa00}${totaldown wlp9s0b1}
+${color #ffa200}${hr 2}
