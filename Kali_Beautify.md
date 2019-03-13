@@ -4,7 +4,31 @@
 
 _生命不息，折腾不止_
 
-[TOC]
+<!-- TOC -->
+
+- [Kali Linux(Debian) Beautify](#kali-linuxdebian-beautify)
+    - [桌面美化软件](#%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96%E8%BD%AF%E4%BB%B6)
+        - [Cairo-Dock](#cairo-dock)
+            - [安装](#%E5%AE%89%E8%A3%85)
+            - [运行效果](#%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C)
+        - [Plank](#plank)
+        - [Gnome-Pie](#gnome-pie)
+            - [安装](#%E5%AE%89%E8%A3%85-1)
+            - [运行效果](#%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C-1)
+        - [Latte Dock](#latte-dock)
+            - [安装](#%E5%AE%89%E8%A3%85-2)
+            - [运行效果](#%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C-2)
+        - [Docky](#docky)
+        - [AWN-Dock](#awn-dock)
+    - [系统信息监控软件](#%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E7%9B%91%E6%8E%A7%E8%BD%AF%E4%BB%B6)
+        - [Conky](#conky)
+            - [安装](#%E5%AE%89%E8%A3%85-3)
+            - [配置文件](#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6)
+            - [Conky的自启动](#conky%E7%9A%84%E8%87%AA%E5%90%AF%E5%8A%A8)
+            - [运行效果](#%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C-3)
+        - [其他系统信息监控的软件不想去试了](#%E5%85%B6%E4%BB%96%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF%E7%9B%91%E6%8E%A7%E7%9A%84%E8%BD%AF%E4%BB%B6%E4%B8%8D%E6%83%B3%E5%8E%BB%E8%AF%95%E4%BA%86)
+
+<!-- /TOC -->
 
 ## 桌面美化软件
 
@@ -61,6 +85,14 @@ _生命不息，折腾不止_
 #### 运行效果
 
 ![latta](./images/latta.gif)
+
+### Docky
+
+> 这个工具网上查到的下载下来之后发现一堆东西，看上去好像还要自己编译安装，就懒得弄了，把下载好的文件放在了**Software**文件夹里面，感兴趣的话自家下载了研究一下吧，我是懒得弄了
+
+### AWN-Dock
+
+> 理由同上，不想试了感觉麻烦
 
 ---
 
