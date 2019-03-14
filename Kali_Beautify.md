@@ -8,6 +8,10 @@ _生命不息，折腾不止_
 
 - [Kali Linux(Debian) Beautify](#kali-linuxdebian-beautify)
     - [桌面美化软件](#%E6%A1%8C%E9%9D%A2%E7%BE%8E%E5%8C%96%E8%BD%AF%E4%BB%B6)
+        - [Gnome自带插件](#gnome%E8%87%AA%E5%B8%A6%E6%8F%92%E4%BB%B6)
+            - [Topicons Plus](#topicons-plus)
+            - [System monitor](#system-monitor)
+            - [太多了自己尝试一下吧](#%E5%A4%AA%E5%A4%9A%E4%BA%86%E8%87%AA%E5%B7%B1%E5%B0%9D%E8%AF%95%E4%B8%80%E4%B8%8B%E5%90%A7)
         - [Cairo-Dock](#cairo-dock)
             - [安装](#%E5%AE%89%E8%A3%85)
             - [运行效果](#%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C)
