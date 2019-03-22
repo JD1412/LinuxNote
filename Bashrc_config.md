@@ -4,9 +4,20 @@
 
 ---
 
+有的时候新装的系统换了我最后的那个配置文件之后会报一个错误是
+`pyenv : commend not found`
+
+解决措施：
+`git clone https://github.com/yyuu/pyenv.git ~/.pyenv`
+
+下面是正文
+
+---
+
 > 语法都是Linux Shell脚本文件语法，不熟悉的可以自己补一下
 
 ## 原配置文件
+
 ```shell
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
