@@ -5,7 +5,7 @@
 ---
 
 有的时候新装的系统换了我最后的那个配置文件之后会报一个错误是
-`pyenv : commend not found`
+`pyenv : command not found`
 
 解决措施：
 `git clone https://github.com/yyuu/pyenv.git ~/.pyenv`
