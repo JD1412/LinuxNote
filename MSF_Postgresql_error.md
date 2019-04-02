@@ -79,4 +79,5 @@ Apr 02 08:14:34 kali systemd[1]: Started PostgreSQL RDBMS.
 你会发现每次重启之后都要开启一次服务，嫌麻烦的话就添加一个开机自启动服务
 
 命令： `sudo update-rc.d postgresql enable`
+
 [参考链接](http://www.92ez.com/?action=show&id=14)
