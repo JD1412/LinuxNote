@@ -30,7 +30,7 @@ We will respond on the basis of your support entitlement.
 
 ## 解决方法：
 
-[官网解释](https://kb.vmware.com/s/article/50862?lang=en_US "参照")
+[官网解释](https://kb.vmware.com/s/article/50862?lang=en_US "just do it")
 
 ### Resolution：
 - `Currently, there is no resolution.`
