@@ -6,35 +6,7 @@
 
 这里的数值的意思：每一个写成二进制之后，对应读、写、执行
 
-<table>
-    <tr>
-        <th>r</th>
-        <th>w</th>
-        <th>x</th>
-        <th>r</th>
-        <th>w</th>
-        <th>x</th>
-        <th>r</th>
-        <th>w</th>
-        <th>x</th>
-    </tr>
-    <tr>
-        <td align="center" colspan="3"> 7 </td>
-        <td align="center" colspan="3"> 7 </td>
-        <td align="center" colspan="3"> 7 </td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-        <td>1</td>
-    </tr>
-</table>
+![rwx](images/2019/06/rwx.png)
 
 ## 方法二
 
